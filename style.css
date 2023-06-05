@@ -196,7 +196,7 @@ footer p{
     height: 430px;
     opacity: 0;
     transform: .5s ease;
-    background-color:lightgray;
+    background-color:rgba(0,0,0, 0.6);
 
 
 }
@@ -206,7 +206,7 @@ footer p{
 }
 
 .text{
-    color:black;
+    color:white;
     font-size: 20px;
     position: absolute;
     top: 20%;
