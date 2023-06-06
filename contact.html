@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylecontact.css">
+    <script src="js/gsap.js"></script>
+    <script src="js/ScrollTrigger.js"></script>
+</head>
+<body>
+
+    <div class="hero">
+    
+
+        <nav>
+        <section class="logo"> 
+            <a href="#"><img src="img/logo.png" alt="logo" width="100" height="100"></a>
+        </section>
+        
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="works.html">Works</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button type="button">LinkedIn</button>
+
+
+        </nav>
+    </div>
+
+    <section>
+        <h1 class="title-big">Get in touch</h1>
+<div class="wrapper">
+
+
+<div class="text1">
+<h2>Treviso</h2>
+<p>Via Cornaino 12, 31100</p>
+</div>
+
+<div class="text2">
+<h2>Milano</h2>
+<p>Via Longarone ,18</p>
+</div>
+
+<div class="text3">
+<h2>Phone Number</h2>
+<p>+39 3899262528</p>
+</div>
+
+<div class="text4">
+<h2>Email</h2>
+<p>hamidi.zahra177@gmail.com</p>
+</div>
+
+</div>
+
+
+    </section>
+
+    <footer>
+
+        <p>©2023 Maria Hamidizadeh. All rights Reserved</p>
+
+        <a href="#"><img src="img/facebook.png" alt="facebook" width="24" height="24"></a>
+        <a href="#"><img src="img/instagrampng.png" alt="instagram" width="24" height="24"></a>
+        <a href="#"><img src="img/linkedin.png" alt="linkedin" width="24" height="24"></a>
+        <a href="#"><img src="img/twitter.png" alt="twitter" width="24" height="24"></a>
+
+
+    </footer>
+    <script>  gsap.from(".title-big", {
+        duration: 5, x: -1000, skewX: 100, scrollTrigger: {
+            trigger: "title-big", 
+            //markers: true,
+            start: "20% 100%",
+            end: "100% 80%",
+            scrub: true,
+            toggleActions: "play none reverse none"
+        }
+    })</script>
+</body>
+</html>
