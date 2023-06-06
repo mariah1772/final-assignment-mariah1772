@@ -129,7 +129,7 @@
 
     <section class="service-title">
        <section>
-        <h3 class="service">WHAT YOU WILL SEE IN THIS PORTFOLIO</h3>
+        <h3 class="scrolling-text">WHAT YOU WILL SEE IN THIS PORTFOLIO</h3>
     </section>
        
         <div class="wrapper">
@@ -178,9 +178,8 @@
 
     </footer>
    <script>
-      gsap.from(".service", {
+      gsap.from(".scrolling-text", {
         duration: 5, x: -1000, skewX: 100, scrollTrigger: {
-            trigger: "service", 
             //markers: true,
             start: "0 50%",
             end: "100% 40%",
@@ -188,23 +187,6 @@
             toggleActions: "play none reverse none"
         }
     })
-
-    
-//     gsap.from(".service",{
-//     duration:.5,
-//     delay: .5,
-//     opacity: 0,
-//     y: 20,
-//     scrollTrigger:{
-//         trigger:".service",
-//         markers:true,
-//         start:"10% 50%",
-//         end:"100% 30%",
-
-//         toggleActions: "play none reverse none"
-        
-//     }
-// })
    </script>
 
 

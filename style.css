@@ -90,7 +90,7 @@ h1{
 
 }
 
-h3{
+.scrolling-text {
     display: flex;
     font-size: 300%;
     padding-bottom: 8%;
@@ -153,32 +153,19 @@ footer p{
     grid-column: 1/ span 0; */
     grid-template-columns: 1fr 1fr ;
     grid-template-rows: 1fr 1fr;
-    
-    
-    width:50%; 
+     
+    width:100%; 
     padding: 0;
     margin: 0;
-    
-   
-
 } 
 .containers img{
    gap: 0; 
-   width: 600px;
-   height: 430;
+   width: 100%;
+   height: auto;
 }
-
-
-
-
-
-
 
 .container{
     position: relative;
-    width: 600px;
-    height:430px;
-    
 }
 
 .image{
@@ -192,13 +179,16 @@ footer p{
     bottom: 0;
     left: 0;
     right: 0;
-    width: 600px;
-    height: 430px;
+
     opacity: 0;
-    transform: .5s ease;
+    
     background-color:rgba(0,0,0, 0.6);
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
+    transition: all 100ms ease-in
 }
 
 .container:hover .overlay{
@@ -207,17 +197,8 @@ footer p{
 
 .text{
     color:white;
-    font-size: 20px;
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+    font-size: 30px;
+    line-height: 1;
     text-align:center;
-    line-height: 300%;
-    width: 100%;
     font-family: fontbook;
-    src: url(space.ttf);
-   
 }
